@@ -81,14 +81,15 @@ def crypto_vs_stock(choice):
                 stock_choice = stock_choice.upper()
             
 
+if __name__ == "__main__":
 
-while True:
-    choice_input = input("Do you want to track cryptocurrency or stock prices? (Type 'crypto', 'stock', or 'quit'): ")
-    if choice_input.lower() == 'quit':
-        break
-    elif choice_input.lower() == 'crypto':
-        crypto_vs_stock('crypto')
-    elif choice_input.lower() == 'stock':
-        crypto_vs_stock('stock')
-    else:
-        print("Invalid choice. Please enter 'crypto' or 'stock'.")
+    while True:
+        choice_input = input("Do you want to track cryptocurrency or stock prices? (Type 'crypto', 'stock', or 'quit'): ")
+        if choice_input.lower() == 'quit':
+            break
+        elif choice_input.lower() == 'crypto':
+            crypto_vs_stock('crypto')
+        elif choice_input.lower() == 'stock':
+            crypto_vs_stock('stock')
+        else:
+            print("Invalid choice. Please enter 'crypto' or 'stock'.")
